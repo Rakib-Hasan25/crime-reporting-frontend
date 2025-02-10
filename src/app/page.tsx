@@ -7,6 +7,10 @@ export default function Home() {
        <Button >
         hi hi
        </Button>
+       <Button>
+        From Faysal
+       </Button>
+
     </main>
   )
 }
