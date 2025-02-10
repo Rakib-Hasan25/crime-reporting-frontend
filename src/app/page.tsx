@@ -8,9 +8,8 @@ export default function Home() {
         hi hi
        </Button>
        <Button>
-        From Faysal
+        From Taysir
        </Button>
-
     </main>
   )
 }
