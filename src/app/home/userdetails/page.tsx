@@ -1,11 +1,10 @@
+import ProfilePage from '@/components/faysal/profilePage'
 import React from 'react'
 
 type Props = {}
 
 const Page = (props: Props) => {
-  return (
-    <div>Page</div>
-  )
+  return <ProfilePage />
 }
 
 export default Page

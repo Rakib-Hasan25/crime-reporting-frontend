@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { Shield, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { Shield, Menu, X } from 'lucide-react'
+import { useState } from 'react'
 
 export function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <nav className="border-b">
@@ -36,25 +36,16 @@ export function Navbar() {
           </div>
 
           {/* Desktop navigation */}
-          <div className="hidden md:flex items-center space-x-4">
-            <>
-              <Button variant="ghost" asChild>
-                <Link href="/report">Report Crime</Link>
-              </Button>
-              <Button variant="ghost" asChild>
-                <Link href="/profile">Profile</Link>
-              </Button>
-              <Button variant="outline">Logout</Button>
-            </>
-
-            {/* <>
-                <Button variant="ghost" asChild>
-                  <Link href="/login">Login</Link>
-                </Button>
-                <Button asChild>
-                  <Link href="/register">Register</Link>
-                </Button>
-              </> */}
+          <div className="hidden md:flex space-x-4">
+            {/* <Button variant="ghost" asChild>
+              <Link href="/report">Report Crime</Link>
+            </Button>
+            <Button variant="ghost" asChild>
+              <Link href="/profile">Profile</Link>
+            </Button> */}
+            <Link href="/register">
+              <Button>Register Now!</Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -78,5 +69,5 @@ export function Navbar() {
         </div>
       )}
     </nav>
-  );
+  )
 }

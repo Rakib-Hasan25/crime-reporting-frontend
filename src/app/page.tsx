@@ -1,9 +1,10 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import { Navbar } from "../components/joseph/navbar";
-import { Shield, AlertTriangle, Users, TrendingUp } from "lucide-react";
+'use client'
+import { Button } from '@/components/ui/button'
+import { Navbar } from '../components/joseph/navbar'
+import { Shield, AlertTriangle, Users, TrendingUp } from 'lucide-react'
 
-import Image from "next/image";
+import Image from 'next/image'
+import FeaturedCrime from '@/components/faysal/featuredCrime'
 
 export default function Home() {
   return (
@@ -36,6 +37,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Trending Section */}
+        <FeaturedCrime />
 
         {/* Features Section */}
         <section className="py-12 sm:py-20 bg-muted ">
@@ -221,5 +225,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
